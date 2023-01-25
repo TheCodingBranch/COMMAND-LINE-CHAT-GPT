@@ -15,7 +15,7 @@ model_engine = "text-davinci-003"
 prompt = input("🤖 How can I help you?\n")
  
 
-while prompt.lower() not in ("no", "n", "no!", "you can't", "you cant"):
+while prompt.lower() not in ("no", "n", "no!", "you can't", "you cant", "nothing"):
     # Generate a response
     completion = openai.Completion.create(
         engine=model_engine,
